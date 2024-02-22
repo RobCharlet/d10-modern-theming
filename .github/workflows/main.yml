@@ -6,7 +6,7 @@ jobs:
       - name: Clone the code
         uses: actions/checkout@v1
       - name: Install DDEV
-        uses: jonaseberle/github-action-setup-ddev@v1
+        uses: ddev/github-action-setup-ddev@v1
       - name: Build the website
         run: ddev build
       - name: Check for JavaScript coding standard

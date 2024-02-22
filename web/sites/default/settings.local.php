@@ -70,7 +70,7 @@ $settings['cache']['bins']['render'] = 'cache.backend.null';
 
 /**
  * Disable caching for migrations.
- *
+ * @
  * Uncomment the code below to only store migrations in memory and not in the
  * database. This makes it easier to develop custom migrations.
  */

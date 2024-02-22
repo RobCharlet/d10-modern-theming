@@ -32,6 +32,6 @@
     "start:dev": "webpack --watch --mode development",
     "lint:css": "stylelint \"**/*.css\"",
     "lint:js": "node ./node_modules/eslint/bin/eslint.js",
-    "lint:js:fix": "node ./node_modules/eslint/bin/eslint.js --fix .",
+    "lint:js:fix": "node ./node_modules/eslint/bin/eslint.js --fix ."
   }
 }

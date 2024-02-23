@@ -1,16 +1,13 @@
 <?php
 
-/**
- * @file
- * Drupal Starterkit theme class which update the info file to
- * remove a potential hidden entry.
- */
-
 namespace Drupal\starterkit_theme;
 
 use Drupal\Component\Serialization\Yaml;
 use Drupal\Core\Theme\StarterKitInterface;
 
+/**
+ * Drupal Starterkit theme class.
+ */
 final class StarterKit implements StarterKitInterface {
 
   /**
@@ -18,7 +15,7 @@ final class StarterKit implements StarterKitInterface {
    */
   public static function postProcess(string $working_dir, string $machine_name, string $theme_name): void {
     $info_file = "$working_dir/$machine_name.info.yml";
-    $info = Yaml::decode(file_get_contents($info_file));
+    $info      = Yaml::decode(file_get_contents($info_file));
     unset($info['hidden']);
     file_put_contents($info_file, Yaml::encode($info));
   }

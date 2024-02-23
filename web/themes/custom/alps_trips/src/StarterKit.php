@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * @file
+ * Drupal Starterkit theme class which update the info file to
+ * remove a potential hidden entry.
+ */
+
 namespace Drupal\starterkit_theme;
 
 use Drupal\Component\Serialization\Yaml;

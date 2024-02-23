@@ -1,8 +1,8 @@
 name: alps_trips
+description: 'alps_trips theme'
 type: theme
 'base theme': stable9
 starterkit: true
-version: VERSION
 libraries:
   - alps_trips/base
   - alps_trips/messages

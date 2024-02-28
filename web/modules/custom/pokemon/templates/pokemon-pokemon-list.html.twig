@@ -1,0 +1,26 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a list of pokemons.
+ *
+ * Available variables:
+ * - pokemons: An array of array with pokemon data.
+ */
+#}
+{% if pokemons.results %}
+  <div id="pokemon-loading-overlay" class="pokemon-loading-overlay">
+    <div class="pokemon-loader"></div>
+  </div>
+  <div id="pokemon-list-wrapper">
+    <ul class="pokemon-list">
+      {% for pokemon in pokemons.results %}
+        <a href="{{ path('pokemon.details', {'name': pokemon.name}) }}">
+          <li class="pokemon-card">
+            <h3>{{ pokemon.name }}</h3>
+          </li>
+        </a>
+      {% endfor %}
+    </ul>
+    {{ pager }}
+  </div>
+{% endif %}

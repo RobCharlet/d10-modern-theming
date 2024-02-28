@@ -1,0 +1,19 @@
+pokemon.show:
+  path: '/pokemon'
+  defaults:
+    _controller: \Drupal\pokemon\Controller\PokemonController::showPokemons
+    _title: 'Catch them all!'
+    page: 0
+  requirements:
+    _permission: 'access content'
+  options:
+    parameters:
+      page:
+        type: integer
+pokemon.details:
+  path: '/pokemon/{name}'
+  defaults:
+    _controller: \Drupal\pokemon\Controller\PokemonController::showPokemonDetails
+    _title: 'Pokemon details'
+  requirements:
+    _permission: 'access content'

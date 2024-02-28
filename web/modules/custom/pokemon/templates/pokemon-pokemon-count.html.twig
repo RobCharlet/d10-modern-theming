@@ -1,0 +1,16 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a list of pokemons.
+ *
+ * Available variables:
+ * - count: An integer with pokemon count.
+ */
+#}
+<div id="pokemon-count">
+  {% trans %}
+    There is {{ count }} pokemon.
+  {% plural count %}
+    There is {{ count }} pokemons.
+  {% endtrans %}
+</div>

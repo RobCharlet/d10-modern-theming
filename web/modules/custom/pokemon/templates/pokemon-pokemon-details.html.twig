@@ -1,0 +1,10 @@
+<h2>{{ "Pokemon details"|t }}</h2>
+<div class="pokemon-details">
+  {% if pokemon %}
+    <ul>
+      <li>base_experience: {{ pokemon.base_experience }}</li>
+      <li>weight: {{ pokemon.weight }}</li>
+    </ul>
+  {% endif %}
+  <p><a href="{{ path('pokemon.show') }}">Back</a></p>
+</div>

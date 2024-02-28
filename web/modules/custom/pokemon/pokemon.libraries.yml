@@ -1,0 +1,12 @@
+base:
+  version: 1.0.0
+  css:
+    component:
+      css/pokemon.css: {}
+  js:
+    js/pokemon.js: {}
+  dependencies:
+    - core/drupal
+    - core/drupal.ajax
+    - core/jquery
+    - core/once

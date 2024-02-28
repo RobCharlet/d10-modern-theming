@@ -1,0 +1,7 @@
+services:
+  pokemon_client:
+    class: \Drupal\pokemon\PokemonClient
+    arguments: ['@http_client']
+  pokemon_controller:
+    class: \Drupal\pokemon\Controller\PokemonController
+    arguments: ['pokemon_client', '@pager.manager', '@renderer']

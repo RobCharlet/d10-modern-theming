@@ -20,3 +20,17 @@ libraries-extend:
     - alps_trips/progress
 core_version_requirement: ^10
 generator: 'starterkit_theme:10.1.1'
+regions:
+  header: Header
+  breadcrumb: Breacrumb
+  help: Help
+  content: Content
+  sidebar: Right sidebar
+  footer: Footer
+  page_top: Page top
+  page_bottom: Page bottom
+components:
+  namespaces:
+    atoms: ../../../../storybook/stories/01-atoms
+    molecules: ../../../../storybook/stories/02-molecules
+    organisms: ../../../../storybook/stories/03-organisms

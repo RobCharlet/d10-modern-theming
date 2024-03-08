@@ -13564,7 +13564,6 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/cl_generator": 10,
-        "drupal/components": 10,
         "drupal/default_content": 15
     },
     "prefer-stable": true,

@@ -1,0 +1,19 @@
+{# Prerender socials items to be provide in the footer.html.twig organisms #}
+{% set rendered_socials %}
+  {% for social in socials %}
+    {{ include('@atoms/social.html.twig', {
+        'name': social.name,
+        'url': social.url,
+        'svg': social.svg
+      })
+    }}
+  {% endfor %}
+{% endset %}
+
+{{ devel_breakpoint() }}
+{{  include('@organisms/footer.html.twig', {
+  'title': site_name,
+  'copyright': copyright,
+  'menu': content,
+  'social': rendered_socials
+}) }}

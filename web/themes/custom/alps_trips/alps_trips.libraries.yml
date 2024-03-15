@@ -136,3 +136,26 @@ swiper:
         { type: external, minified: true }
   dependencies:
     - alps_trips/alpine
+leaflet:
+  remote: https://leafletjs.com
+  version: 1.9.3
+  license:
+    name: BSD 2-Clause
+    url: https://github.com/Leaflet/Leaflet/blob/main/LICENSE
+    gpl-compatible: true
+  js:
+    js/leaflet.js:
+      { minified: true }
+  css:
+    component:
+      css/leaflet.css:
+        { minified: true }
+map:
+   version: VERSION
+   js:
+     js/map.js: {}
+   dependencies:
+     - core/drupal
+     - core/once
+     - alps_trips/leaflet
+

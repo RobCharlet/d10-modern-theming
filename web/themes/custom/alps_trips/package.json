@@ -30,10 +30,16 @@
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "build:dev": "webpack --config webpack.config.js --mode development",
+    "build:js": "npm run copy-map && npm run copy-leaflet",
+    "copy-map": "cp ../../../../storybook/stories/01-atoms/map/map.js js/",
+    "copy-leaflet": "cp node_modules/leaflet/dist/leaflet.js js/leaflet.js && cp node_modules/leaflet/dist/leaflet.css css/leaflet.css && cp node_modules/leaflet/dist/images/marker-icon.png css/images/",
     "start": "webpack --watch",
     "start:dev": "webpack --watch --mode development",
     "lint:css": "stylelint \"**/*.css\"",
     "lint:js": "node ./node_modules/eslint/bin/eslint.js",
     "lint:js:fix": "node ./node_modules/eslint/bin/eslint.js --fix ."
+  },
+  "dependencies": {
+    "leaflet": "^1.9.4"
   }
 }

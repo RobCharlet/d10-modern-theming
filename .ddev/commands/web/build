@@ -15,6 +15,7 @@ drush cr
 # Setup and build the theme.
 yarn --cwd=web/themes/custom/alps_trips install
 yarn --cwd=web/themes/custom/alps_trips build:dev
+yarn --cwd=web/themes/custom/alps_trips build:js
 
 # Build the styleguide.
 cd storybook; npm run generate-css

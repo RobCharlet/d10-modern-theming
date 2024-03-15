@@ -34,3 +34,5 @@ components:
     atoms: ../../../../storybook/stories/01-atoms
     molecules: ../../../../storybook/stories/02-molecules
     organisms: ../../../../storybook/stories/03-organisms
+ckeditor5-stylesheets:
+  - build/main.css

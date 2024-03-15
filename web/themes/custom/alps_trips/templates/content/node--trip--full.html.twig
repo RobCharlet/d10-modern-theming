@@ -67,40 +67,47 @@
  *
  */
 #}
+{% set details %}
+  {{ include('@atoms/details.html.twig', {
+    'first': content.field_duration,
+    'second': content.field_level
+  }) }}
+{% endset %}
+{% set table %}
+  {{ include('@atoms/details.html.twig', {
+    'headers': ['Origin'|t,'Destination'|t],
+    'rows': [content.field_origin, field_destination]
+  }) }}
+{% endset %}
+{{ include('@organisms/trip-full.html.twig', {
+  'picture': content.field_picture,
+  'details': details,
+  'body': content.body,
+  'trip': table,
+  'map': content.field_lat_lng,
+  'attributes': attributes,
+}) }}
+{#
+  To allow Drupal to correctly invalidate the cache of all
+  the pages that use this node,
+  we must render its content variable in the Twig template.
+  However, rendering it will again print all the fields
+  we’ve used in components.
 
-{%
-  set classes = [
-    'node',
-    'node--type-' ~ node.bundle|clean_class,
-    node.isPromoted() ? 'node--promoted',
-    node.isSticky() ? 'node--sticky',
-    not node.isPublished() ? 'node--unpublished',
-    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
-  ]
-%}
-{{ attach_library('alps_trips/node') }}
-<article{{ attributes.addClass(classes) }}>
-
-  {{ title_prefix }}
-  {% if label and not page %}
-    <h2{{ title_attributes }}>
-      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </h2>
-  {% endif %}
-  {{ title_suffix }}
-
-  {% if display_submitted %}
-    <footer class="node__meta">
-      {{ author_picture }}
-      <div{{ author_attributes.addClass('node__submitted') }}>
-        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-        {{ metadata }}
-      </div>
-    </footer>
-  {% endif %}
-
-  <div{{ content_attributes.addClass('node__content') }}>
-    {{ content }}
-  </div>
-
-</article>
+  Luckily, Drupal provides the without Twig filter
+  (see the last block of the preceding code) to remove
+  a set of elements from a render array, which allows us to print
+  the content render array without all the fields
+  that have been already rendered.
+#}
+{{
+  content|without(
+    'body',
+    'field_destination',
+    'field_picture',
+    'field_origin',
+    'field_duration',
+    'field_level',
+    'field_lat_lng'
+  )
+}}

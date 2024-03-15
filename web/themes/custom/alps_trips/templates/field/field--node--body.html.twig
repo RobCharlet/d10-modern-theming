@@ -1,0 +1,6 @@
+{% set value %}
+  {{ items.0.content }}
+{% endset %}
+{{ include('@atoms/body.html.twig', {
+  'body': value,
+}) }}

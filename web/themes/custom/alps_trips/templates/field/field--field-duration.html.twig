@@ -1,0 +1,8 @@
+{% set value %}
+  {{ items.0.content }}
+{% endset %}
+{{ include('@atoms/term.html.twig', {
+  'label': label,
+  'value': value,
+  'attributes': attributes
+}) }}

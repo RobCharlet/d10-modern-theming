@@ -10,7 +10,10 @@
  * @see template_preprocess_input()
  */
 #}
-{{ include('@atoms/input.html.twig', {
+{{ include('@atoms/button.html.twig', {
   'attributes': attributes,
-  'children': children,
+  'label': element['#value'],
+  'type': submit,
+  'marginTop': false,
+  'fullWidth': true
 }) }}

@@ -5,7 +5,6 @@
  * Functions to support theming.
  */
 
-use Drupal\alps_base\Entity\BannerBlock;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
@@ -83,11 +82,11 @@ function alps_trips_theme($existing, $type, $theme, $path) {
  *
  * Suggests a file name for the block_content type.
  */
-function alps_trips_theme_suggestions_block_alter(array &$suggestions, array $variables)
-{
+function alps_trips_theme_suggestions_block_alter(array &$suggestions, array $variables) {
   $elements = $variables['elements'];
 
-  // block_content are editorial blocks defined in /admin/structure/block-content
+  // block_content are editorial blocks defined in
+  // /admin/structure/block-content.
   if (array_key_exists('#block_content', $elements['content'])) {
     /** @var \Drupal\block_content\Entity\BlockContent $block_content */
     $block_content = $elements['content']['#block_content'];
@@ -108,22 +107,21 @@ function alps_trips_preprocess_block(&$variables): void {
 
     // Remove next comment lines to add custom block content variables for the
     // block--type_banner.html.twig template.
-/*    $id = $variables['elements']['#id'];
+    /*    $id = $variables['elements']['#id'];
     if ($id == 'alps_trips_iceclimber') {
-      $variables['link'] = $block_content
-        ->get('field_link')->first()->getUrl()
-        ->toString();
-      $variables['title'] = $block_content
-        ->get('field_link')->first()->get('title')
-        ->getValue();
-      $variables['image'] = $block_content
-        ->get('field_image')
-        ->entity->get('field_media_image')->entity
-        ->get('uri')->first()->get('url')->getValue();
-      $variables['cta'] = $block_content
-        ->get('field_cta')->first()->get('value')
-        ->getValue();
+    $variables['link'] = $block_content
+    ->get('field_link')->first()->getUrl()
+    ->toString();
+    $variables['title'] = $block_content
+    ->get('field_link')->first()->get('title')
+    ->getValue();
+    $variables['image'] = $block_content
+    ->get('field_image')
+    ->entity->get('field_media_image')->entity
+    ->get('uri')->first()->get('url')->getValue();
+    $variables['cta'] = $block_content
+    ->get('field_cta')->first()->get('value')
+    ->getValue();
     }*/
   }
 }
-

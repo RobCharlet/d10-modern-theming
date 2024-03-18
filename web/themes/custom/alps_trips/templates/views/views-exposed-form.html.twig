@@ -16,6 +16,6 @@
   #}
 {{ q }}
 {% endif %}
-<div class="form--inline clearfix">
-  {{ form }}
-</div>
+{{ include('@organisms/view/exposed-form.html.twig', {
+  'children': form
+}) }}

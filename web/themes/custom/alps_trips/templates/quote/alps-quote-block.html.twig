@@ -10,11 +10,9 @@
  * @see template_preprocess_alps_quote_block()
  */
 #}
-<blockquote>
-  {{ include('@atoms/quote.html.twig',
-    {
+{{ include('@atoms/quote.html.twig',
+  {
     'quote': quote,
     'author': author,
-    }
-  ) }}
-</blockquote>
+  }
+) }}

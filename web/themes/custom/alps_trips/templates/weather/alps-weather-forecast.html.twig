@@ -11,7 +11,7 @@
  */
 #}
 
-<h2>Forecast for {{ forecast.city.name }}</h2>
+{# <h2>Forecast for {{ forecast.city.name }}</h2>
 <div class="forecast-list">
   {% for item in forecast.list %}
     {{ include('@molecules/weather.html.twig', {
@@ -27,4 +27,8 @@
       'infoLabel': 'More info'|t,
     }) }}
   {% endfor %}
-</div>
+</div> #}
+
+{{ include('alps_weather:at-weather', {
+  'city': forecast.city.name
+}, with_context = false) }}

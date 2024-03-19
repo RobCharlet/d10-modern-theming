@@ -1,6 +1,29 @@
-{{ include('@molecules/card.html.twig', {
+{{ dump(content.field_picture[0]['#media'].field_media_image.entity.uri) }}
+{% embed 'alps_trips:at-card' with {
   'title': content.field_title,
   'description': content.field_description,
-  'image': content.field_picture,
-}) }}
+} %}
+  {% block top %}
+    {% set image_uri = content
+    .field_picture[0]['#media']
+    .field_media_image
+    .entity.uri.value %}
+    {% set image_alt = content
+    .field_picture[0]['#media']
+    .field_media_image[0]
+    .alt %}
+    {{ include('alps_trips:at-picture', {
+      'src': image_uri|image_style('large'),
+      'attributes': create_attribute().setAttribute('alt', image_alt)
+    },
+      with_context = false) }}
+  {% endblock %}
+  {% block bottom %}
+    {{ include('alps_trips:at-button', {
+      'title': 'More info',
+      'type': 'primary'
+    },
+      with_context = false) }}
+  {% endblock %}
+{% endembed %}
 

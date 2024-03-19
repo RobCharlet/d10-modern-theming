@@ -25,6 +25,8 @@ module.exports = {
     'text-nord-13',
     'text-nord-14',
     'text-nord-15',
+    'bg-blue-500',
+    'bg-blue-700',
   ],
   theme: {
     extend: {

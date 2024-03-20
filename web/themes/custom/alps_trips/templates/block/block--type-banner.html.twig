@@ -27,7 +27,7 @@
  */
 #}
 {{ include('@molecules/banner.html.twig', {
-  'link': block_content.getLink(),
+  'link': get_link_uri(block_content, 'field_link'),
   'image': file_url(block_content.getImage()),
   'cta': block_content.getCta(),
 }) }}

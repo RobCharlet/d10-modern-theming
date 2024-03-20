@@ -1,0 +1,21 @@
+title: Design System/Molecules/Card2
+stories:
+  - name: Default
+    args:
+      title: Title
+      description: Lorem ipsum...
+      top: |
+        {{ include('alps_trips:at-picture', {
+           'picture_attributes': create_attribute()
+             .setAttribute('alt', 'Image alt text'),
+           'src': 'https://picsum.photos/id/235/197/72',
+          },
+          with_context = false)
+        }}
+      bottom: |
+        {{ include('alps_trips:at-button', {
+            'title': 'More info',
+            'type': 'primary'
+          },
+          with_context = false)
+        }}

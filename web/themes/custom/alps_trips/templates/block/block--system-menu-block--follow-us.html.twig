@@ -32,16 +32,9 @@
  * http://www.w3.org/TR/WCAG-TECHS/H42.html for more information.
  */
 #}
-{{ include ("@molecules/block-menu.html.twig", {
-  "attributes": attributes,
-  "title_attributes": title_attributes,
-  "plugin_id": plugin_id,
-  "title_prefix": title_prefix,
-  "title_suffix": title_suffix,
-  "label": label,
-  "content": content,
-  "derivative_plugin_id": derivative_plugin_id,
-  "configuration": configuration,
+{{ include ("@molecules/menu-block.html.twig", {
+  "title": label,
+  "menu": content,
 }) }}
 
 

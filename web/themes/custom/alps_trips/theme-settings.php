@@ -1,12 +1,16 @@
 <?php
 
+/**
+ * @file
+ * Functions to support Alps Trips theme settings.
+ */
+
 use Drupal\Core\Form\FormStateInterface;
 
 /**
  * Implements hook_form_system_theme_settings_alter().
  */
-function alps_trips_form_system_theme_settings_alter(&$form, FormStateInterface $form_state): void
-{
+function alps_trips_form_system_theme_settings_alter(&$form, FormStateInterface $form_state): void {
   $form['alps_trips'] = [
     '#type' => 'fieldset',
     '#title' => t('Alps Trips Configuration'),

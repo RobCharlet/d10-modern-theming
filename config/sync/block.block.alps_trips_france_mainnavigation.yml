@@ -1,4 +1,4 @@
-uuid: 70af5430-99fd-45b3-a077-602278c1d4c5
+uuid: f67a48c5-e377-4ad3-bb6d-c1910d289510
 langcode: en
 status: true
 dependencies:
@@ -7,13 +7,11 @@ dependencies:
   module:
     - system
   theme:
-    - alps_trips
-_core:
-  default_config_hash: KWAiziL39uEzmOJEql_wbUP2RtqGceL3WM2CfxhMelE
-id: alps_trips_main_menu
-theme: alps_trips
+    - alps_trips_france
+id: alps_trips_france_mainnavigation
+theme: alps_trips_france
 region: header
-weight: -6
+weight: -7
 provider: null
 plugin: 'system_menu_block:main'
 settings:
@@ -22,6 +20,6 @@ settings:
   label_display: '0'
   provider: system
   level: 1
-  depth: 2
-  expand_all_items: true
+  depth: 0
+  expand_all_items: false
 visibility: {  }

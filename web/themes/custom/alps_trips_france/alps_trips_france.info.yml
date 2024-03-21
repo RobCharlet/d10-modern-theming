@@ -1,0 +1,14 @@
+name: Alps Trips France
+description: 'alps_trips France theme'
+type: theme
+'base theme': alps_trips
+core_version_requirement: ^10
+regions:
+  header: Header
+  breadcrumb: Breacrumb
+  help: Help
+  content: Content
+  sidebar: Right sidebar
+  footer: Footer
+  page_top: Page top
+  page_bottom: Page bottom

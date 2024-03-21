@@ -1,0 +1,25 @@
+uuid: c2709fb0-5962-41d6-9ab4-45cdee00ba13
+langcode: en
+status: true
+dependencies:
+  module:
+    - alps_quote
+    - system
+  theme:
+    - alps_trips_france
+id: alps_trips_france_quote
+theme: alps_trips_france
+region: sidebar
+weight: -7
+provider: null
+plugin: alps_quote_block
+settings:
+  id: alps_quote_block
+  label: Quote
+  label_display: '0'
+  provider: alps_quote
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/trip/*'

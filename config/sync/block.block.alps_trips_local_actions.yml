@@ -1,0 +1,20 @@
+uuid: 0c4b3340-9797-4809-9c3d-c7b0a8907ec2
+langcode: en
+status: true
+dependencies:
+  theme:
+    - alps_trips
+_core:
+  default_config_hash: CdXfDmRgAvms7EQovxxWPdYi0GitxeRbVtScYK16ZH0
+id: alps_trips_local_actions
+theme: alps_trips
+region: content
+weight: -10
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

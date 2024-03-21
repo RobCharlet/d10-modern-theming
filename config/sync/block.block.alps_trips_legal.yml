@@ -1,0 +1,25 @@
+uuid: 9bc15b13-8e71-46c1-9290-82de8a4f6c7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.legal
+  module:
+    - system
+  theme:
+    - alps_trips
+id: alps_trips_legal
+theme: alps_trips
+region: footer
+weight: 0
+provider: null
+plugin: 'system_menu_block:legal'
+settings:
+  id: 'system_menu_block:legal'
+  label: Legal
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

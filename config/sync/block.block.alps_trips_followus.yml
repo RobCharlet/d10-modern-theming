@@ -1,22 +1,22 @@
-uuid: d6159caf-601d-45db-8453-08eb2f633865
+uuid: d59c1535-e0db-4e7a-a24f-6a02e921989e
 langcode: en
 status: true
 dependencies:
   config:
-    - system.menu.legal
+    - system.menu.follow-us
   module:
     - system
   theme:
     - alps_trips
-id: legal
+id: alps_trips_followus
 theme: alps_trips
 region: footer
 weight: 0
 provider: null
-plugin: 'system_menu_block:legal'
+plugin: 'system_menu_block:follow-us'
 settings:
-  id: 'system_menu_block:legal'
-  label: Legal
+  id: 'system_menu_block:follow-us'
+  label: 'Follow Us'
   label_display: visible
   provider: system
   level: 1

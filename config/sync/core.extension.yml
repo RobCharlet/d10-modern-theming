@@ -12,6 +12,7 @@ module:
   breakpoint: 0
   ckeditor5: 0
   cl_generator: 0
+  cl_server: 0
   components: 0
   config: 0
   consumers: 0
@@ -21,6 +22,7 @@ module:
   dblog: 0
   decoupled_router: 0
   default_content: 0
+  devel: 0
   dynamic_page_cache: 0
   easy_breadcrumb: 0
   editor: 0
@@ -51,6 +53,7 @@ module:
   path: 0
   path_alias: 0
   phpass: 0
+  pokemon: 0
   responsive_image: 0
   rest: 0
   restui: 0
@@ -67,10 +70,12 @@ module:
   token: 0
   toolbar: 0
   tour: 0
+  tracer: 0
   twig_tweak: 0
   update: 0
   user: 0
   views_ui: 0
+  webprofiler: 0
   pathauto: 1
   formdazzle: 10
   views: 10
@@ -79,7 +84,8 @@ module:
 theme:
   claro: 0
   stable9: 0
-  alps_trips: 0
   starterkit_theme: 0
   olivero: 0
+  alps_trips: 0
+  alps_trips_france: 0
 profile: alps_trips_profile

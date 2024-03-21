@@ -1,0 +1,20 @@
+uuid: baed41b5-85c9-4131-8412-110c912de114
+langcode: en
+status: true
+dependencies:
+  theme:
+    - alps_trips_france
+_core:
+  default_config_hash: CdXfDmRgAvms7EQovxxWPdYi0GitxeRbVtScYK16ZH0
+id: alps_trips_france_local_actions
+theme: alps_trips_france
+region: content
+weight: -10
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

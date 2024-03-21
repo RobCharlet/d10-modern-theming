@@ -1,4 +1,4 @@
-uuid: 3b5ce337-34cb-48da-a0b4-e66d6dec33c6
+uuid: aec01f85-a9e1-43a3-96ac-9e514dedfb29
 langcode: en
 status: true
 dependencies:
@@ -7,9 +7,9 @@ dependencies:
   module:
     - system
   theme:
-    - alps_trips
-id: followus
-theme: alps_trips
+    - alps_trips_france
+id: alps_trips_france_followus
+theme: alps_trips_france
 region: footer
 weight: 0
 provider: null

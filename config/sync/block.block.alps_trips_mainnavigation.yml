@@ -1,0 +1,25 @@
+uuid: 46a3e599-a1df-4a8a-b10b-438188cde41d
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - alps_trips
+id: alps_trips_mainnavigation
+theme: alps_trips
+region: header
+weight: -7
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

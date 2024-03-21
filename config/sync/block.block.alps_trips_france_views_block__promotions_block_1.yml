@@ -1,4 +1,4 @@
-uuid: a49475c2-f7dc-4562-875f-e66612f112c5
+uuid: cc538b2b-ccef-4a88-9663-1870141b373f
 langcode: en
 status: true
 dependencies:
@@ -8,11 +8,11 @@ dependencies:
     - system
     - views
   theme:
-    - alps_trips
-id: alps_trips_views_block__promotions_block_1
-theme: alps_trips
+    - alps_trips_france
+id: alps_trips_france_views_block__promotions_block_1
+theme: alps_trips_france
 region: sidebar
-weight: 0
+weight: -6
 provider: null
 plugin: 'views_block:promotions-block_1'
 settings:

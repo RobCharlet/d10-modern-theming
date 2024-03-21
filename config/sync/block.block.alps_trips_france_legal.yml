@@ -1,0 +1,25 @@
+uuid: 87d06392-1135-4e2f-a31c-970ca331203c
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.legal
+  module:
+    - system
+  theme:
+    - alps_trips_france
+id: alps_trips_france_legal
+theme: alps_trips_france
+region: footer
+weight: 0
+provider: null
+plugin: 'system_menu_block:legal'
+settings:
+  id: 'system_menu_block:legal'
+  label: Legal
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

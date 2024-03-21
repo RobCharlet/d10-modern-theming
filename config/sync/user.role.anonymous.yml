@@ -9,6 +9,7 @@ dependencies:
     - filter
     - media
     - system
+    - webprofiler
 _core:
   default_config_hash: 6WavjUYXIegP9AAg2zXGx54MWIVoomC3SZhNiqe-Dyk
 id: anonymous
@@ -18,5 +19,7 @@ is_admin: false
 permissions:
   - 'access content'
   - 'access site-wide contact form'
+  - 'access webprofiler'
   - 'use text format restricted_html'
   - 'view media'
+  - 'view webprofiler toolbar'

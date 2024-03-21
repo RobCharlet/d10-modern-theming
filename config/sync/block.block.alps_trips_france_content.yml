@@ -1,15 +1,17 @@
-uuid: 86841925-cfc7-48dd-9c91-917df8ba5be6
+uuid: f6fcad69-5693-45d9-8323-5db617dc6df4
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - alps_trips
-id: mainpagecontent
-theme: alps_trips
+    - alps_trips_france
+_core:
+  default_config_hash: a0Yyx1GeyKarZ4T_yXQBR_ZFKnXiFLtxAb6gWLd8nr0
+id: alps_trips_france_content
+theme: alps_trips_france
 region: content
-weight: -4
+weight: 0
 provider: null
 plugin: system_main_block
 settings:

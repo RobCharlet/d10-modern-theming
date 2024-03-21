@@ -1,15 +1,15 @@
-uuid: abddc615-41ff-4c8f-a0e5-59ae06b4987c
+uuid: 83ae3bd8-2ca3-446f-bc18-6eb0f8346f32
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - alps_trips
+    - alps_trips_france
 _core:
   default_config_hash: '-Ac3ISpIT0PQ-whzD7_dw0SdKi6dAbRFNWdSjOiVDqg'
-id: alps_trips_messages
-theme: alps_trips
+id: alps_trips_france_messages
+theme: alps_trips_france
 region: breadcrumb
 weight: -7
 provider: null

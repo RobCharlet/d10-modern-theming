@@ -1,4 +1,4 @@
-uuid: c82987d9-6562-4415-81fd-875c7813ed07
+uuid: f5d885a0-1e28-4be8-936d-8c5a54704550
 langcode: en
 status: true
 dependencies:
@@ -6,11 +6,11 @@ dependencies:
     - alps_weather
     - system
   theme:
-    - alps_trips
-id: alps_trips_forecast
-theme: alps_trips
+    - alps_trips_france
+id: alps_trips_france_forecast
+theme: alps_trips_france
 region: sidebar
-weight: 0
+weight: -5
 provider: null
 plugin: alps_weather_forecast
 settings:

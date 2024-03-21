@@ -2,17 +2,17 @@
 {% set rendered_socials %}
   {% for social in socials %}
     {{ include('@atoms/social.html.twig', {
-        'name': social.name,
-        'url': social.url,
-        'svg': social.svg
-      })
-    }}
+      'name': social.name,
+      'url': social.url,
+      'svg': social.svg
+    }) }}
   {% endfor %}
 {% endset %}
 
-{{  include('@organisms/footer.html.twig', {
+{# copyright use getThemeSetting() twig func defined in AlsBaseExtension #}
+{{ include('@organisms/footer.html.twig', {
   'title': site_name,
-  'copyright': copyright,
+  'copyright': theme_setting('copyright'),
   'menu': content,
   'social': rendered_socials
 }) }}

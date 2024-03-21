@@ -1,0 +1,35 @@
+uuid: 3ff0c838-01d1-494f-819b-6373ae8c197e
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.large
+    - image.style.square
+    - image.style.wide
+  theme:
+    - alps_trips
+id: card
+label: Card
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: large
+    breakpoint_id: alps_trips.lg
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: large
+    breakpoint_id: alps_trips.md
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: wide
+    breakpoint_id: alps_trips.sm
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: wide
+    breakpoint_id: alps_trips.mobile
+    multiplier: 1x
+breakpoint_group: alps_trips
+fallback_image_style: square
